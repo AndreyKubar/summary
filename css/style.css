@@ -1,0 +1,303 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* revalia-regular - latin */
+@font-face {
+    font-family: 'Revalia';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/revalia-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/revalia-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  html {
+      box-sizing: border-box;
+  }
+
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+
+  body {
+      font-family: Roboto;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: normal;
+      color: #000000
+
+  }
+
+  li {
+    list-style-type: none; 
+   }
+
+
+  .wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .header{
+    position: absolute;
+    width: 1920px;
+    height: 700px;
+    left: 0px;
+    top: -7px;
+
+    background: #EEEFF1;
+  }
+
+  .header_logo-pic{
+      color: #34547A;
+  }
+  .header_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 57px;
+  }
+  .header_list {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+
+  .header_item {
+      margin-right: 42px;
+  }
+
+  .header_item:last-child {
+      margin-right: 0;
+  }
+
+  .header_link1{
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #34547A;
+}
+
+.header_link{
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+
+.header_link1:hover, .header_link1:focus, .header_link1:active{
+    opacity: .75;
+}
+.main{
+    margin-top: 166px;
+}
+
+.intro{
+    display: flex;
+    max-width: 1028px;
+    align-items: center;
+
+}
+
+.intro_comp-pic {
+    position: absolute;
+    width: 357px;
+    height: 233.7px;
+    left: 487px;
+    top: 271px;
+    max-width: 357px;
+    display: flex;
+    flex-wrap: wrap;;
+}
+
+.intro_title{
+    position: absolute;
+    width: 541px;
+    height: 45px;
+    left: 974px;
+    top: 250px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    
+    color: #000000;
+
+}
+
+
+.intro_subtitle {
+    position: absolute;
+    width: 540px;
+    height: 67px;
+    left: 975px;
+    top: 355px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    
+    color: #727272;
+}
+
+.btn {
+    position: absolute;
+    width: 225px;
+    height: 65px;
+    left: 975px;
+    top: 482px;
+    background: #34547A;
+    color: white
+}
+
+.info {
+    position: absolute;
+    width: 540px;
+    height: 147px;
+    left: 690px;
+    top: 812px;
+    padding-bottom: 100px;
+}
+
+.info_me {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.info_subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+/* ====================================== */
+.project_section{
+    position: absolute;
+    width: 1920px;
+    height: 250px;
+    left: 0px;
+    top: 1059px;
+    background: #34547A;
+}
+
+.project_block{
+    display: flex;
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    left: 595px;
+    top: 1159px;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+/* ======================================== */
+
+.my_skill{
+    display: flex;
+    max-width: 1150px;
+    align-items: center;
+}
+
+.my_photo{
+    position: absolute;
+    width: 555px;
+    height: 450px;
+    left: 981px;
+    top: 1411px;
+    background: url(photo-1508908324153-d1a219719814.jpg), #C4C4C4;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+}
+
+
+.info_my_skills{
+    position: absolute;
+    width: 403px;
+    height: 30px;
+    left: 386px;
+    top: 1420px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    
+}
+
+.wrapper_info-skill {
+    display: flex;
+    align-items: center;
+    
+}
+
+.skill_bar {
+    position: absolute;
+    width: 445px;
+    height: 257px;
+    left: 386px;
+    top: 1420px;
+    
+}
+
+.skill_bar .bar {
+    margin: 54px 0;
+    
+}
+
+.skill_bar .bar:first-child {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.skill_bar .bar .skills_info {
+    margin-bottom: 20px;
+}
+
+.skill_bar .bar .skills_info span{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.skill_bar .bar .rectangle {
+    position: relative;
+    width: 445px;
+    height: 4px;
+    background: #C4C4C4;
+}
+
+.bar .rectangle span{
+    width: 350px;
+    height: 100%;
+    background: #34547A;
+    position: absolute;
+}
+
+
