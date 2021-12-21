@@ -158,6 +158,7 @@
     background: #34547A;
     color: white;
     margin-bottom: 95px;
+    border: 0;
 } 
 
 .info {
@@ -165,6 +166,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 120px;
+    padding-bottom: 100px;
 }
 
 .info_me {
@@ -182,7 +184,6 @@
     line-height: 26px;
     text-align: center;
     color: #727272;
-    margin-bottom: 100px;
 
 }
 /* ====================================== */
@@ -191,21 +192,24 @@
     align-items: center;
     margin-right: 50px;
     width: 140px;
+    margin-bottom: 90px;
 }
 
 .project_block{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     padding-top: 100px;
-    padding-bottom: 100px;
     background: #34547A;
 }
 
 .wrapper_project {
-    padding: 10px;
     margin-left: 20px;
+}
+
+.project_logo {
+    width: max-content;
+    color: white;
 }
 
 .number_project {
@@ -214,7 +218,6 @@
     line-height: 25px;
     
     color: #FFFFFF;
-    padding-bottom: 10px;
 }
 
 .number_project2 {
@@ -225,41 +228,53 @@
 }
 /* ======================================== */
 
-.my_skill{
+
+.avatar{
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.my_photo{
+    display: flex;
+    background: #C4C4C4;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 555px;
+    margin:100px 150px;
+}
+
+.info_my-skill {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.my_photo{
-    width: 48%;
-    background: url(photo-1508908324153-d1a219719814.jpg), #C4C4C4;
-    display: inline-block;
+
+
+.wrapper_info-skill {
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
 }
 
-
-.info_my_skills{
+.my_skill-title {
     display: flex;
-    float: left;
+    justify-content: center;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     color: #000000;
-    
 }
 
-.wrapper_info-skill {
-    display: flex;
-    align-items: center;
-    
-}
 
-.skill_bar {
-
-    
-}
 
 .skill_bar .bar {
     margin: 54px 0;
@@ -294,5 +309,89 @@
     background: #34547A;
     position: absolute;
 }
+/* ==================================================== */
+
+
+
+.info_work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #EEEFF1;
+}
+
+.wrapper_work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-work {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #000000;
+    padding-top: 100px;
+}
+
+.how_work-subtitle {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    padding-top: 50px;
+    padding-bottom: 57px;
+}
+
+.video_work {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.my_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.overlay_video {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.video_work:hover .overlay_video {
+    opacity: 1;
+}
+
+.my_play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
 
 
