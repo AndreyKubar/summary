@@ -172,10 +172,10 @@
     border: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 26px;
     text-align: center;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     
     color: #FFFFFF;
 
@@ -214,7 +214,6 @@
     align-items: center;
     margin-right: 50px;
     width: 140px;
-    margin-bottom: 90px;
 }
 
 .project_block{
@@ -223,6 +222,8 @@
     justify-content: center;
     padding-top: 100px;
     background: #34547A;
+    padding-bottom: 90px;
+
 }
 
 .wrapper_project {
@@ -546,7 +547,54 @@
     display: flex;
     justify-content: center;
     margin-top: 70px;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
 }
+
+/* ================================ */
+
+.footer_wrapper {
+    background-color: #34547A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info_log {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.footer_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer_log {
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.vk_log {
+    width: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 
 
