@@ -28,10 +28,12 @@
 
   html {
       box-sizing: border-box;
+
   }
 
   *, *::before, *::after{
     box-sizing: inherit;
+
   }
 
   body {
@@ -40,12 +42,17 @@
       font-size: 16px;
       line-height: 1.2;
       font-weight: normal;
-      color: #000000
-
+      color: #000000;
   }
 
   li {
     list-style-type: none; 
+   }
+
+   @media only screen and (min-device-width : 280px) and (max-device-width : 1279px) {
+       body {
+           width: 100%;
+       }
    }
 
 
@@ -104,7 +111,7 @@
 .header_link1:hover, .header_link1:focus, .header_link1:active{
     opacity: .75;
 }
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
     .header_wrapper {
         display: block;
         padding-left: 20px;
@@ -139,7 +146,6 @@
 
 .intro_comp-pic {
     margin-right: 140px;
-    padding-left: auto;
     margin-bottom: 50px;
 } 
 
@@ -186,17 +192,23 @@
 
 } 
 
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
 
     .wrapper_intro {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         padding-top: 67px;
     }
 
     .intro {
-        text-align: center;
+
         padding: 0 25px;
     }
+
+
     .intro_title {
         font-weight: 500;
         font-size: 36px;
@@ -205,10 +217,27 @@
         color: #000000;
     }
     .intro_subtitle {
-        max-width: 322px;
         font-size: 16px;
         text-align: center;
     }
+
+    .intro_comp-pic {
+        margin: 0;
+        padding-bottom: 50px;
+    }
+
+    .intro_comp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    /* .wrapper-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 
 }
 
@@ -240,7 +269,7 @@
 
 }
 
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
     .info {
         text-align: center;
         padding: 100px 25px;
@@ -288,7 +317,7 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
     .info_project-block {
         align-items: center;
         margin:  15px;
@@ -297,7 +326,7 @@
 /* ======================================== */
 
 .skill{
-    padding-top: 50px;
+    padding-top: 150px;
 
 }
 
@@ -305,25 +334,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom: 100px;
 
 }
 
 .my_photo{
-    display: flex;
-    background: #C4C4C4;
+    display: flex;;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     max-width: 555px;
-    margin:100px;
 }
 
 .info_my-skill {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 }
 
 
@@ -332,20 +361,25 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: left;
     flex-direction: row-reverse;
     justify-content: center;
+    padding-bottom: 100px;
 }
 
 .my_skill-title {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     color: #000000;
 }
 
-
+.skill_bar {
+    max-width: 445px;
+}
 
 .skill_bar .bar {
     margin: 54px 0;
@@ -353,15 +387,15 @@
 }
 
 .skill_bar .bar:first-child {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-top: 50px;
 }
 
-.skill_bar .bar .skills_info {
-    margin-bottom: 20px;
+.skill_bar .bar .skill_info {
+    padding-bottom: 20px;
 }
 
-.skill_bar .bar .skills_info span{
+.skill_bar .bar .skill_info span{
     font-size: 16px;
     line-height: 26px;
     color: #727272;
@@ -375,29 +409,82 @@
 }
 
 .bar .rectangle span{
-    width: 350px;
+    width: 80%;
     height: 100%;
     background: #34547A;
     position: absolute;
 }
 
-@media (max-width: 1279px) {
-    .skill_bar .bar  .rectangle {
-        align-items: center;
-        width: 350px;
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
+    
+    .skill {
+        margin: 0;
+        padding: 0;
     }
 
-    .bar .rectangle span{
-        width: 266px;
+    .wrapper_info-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+        margin: 0;
     }
+    
+    .skill_bar .bar  .rectangle {
+        align-items: center;
+    }
+
     .my_photo {
-        display: block;
-        width: 340px;
+        width: 100%;
         margin: 0;
     }
     .avatar {
-        padding:80px 20px 100px 20px;
+        width: 100%;
+        padding:80px 0 100px 0;
+        margin: 0;
+
     }
+    .skill_bar .bar .rectangle {
+        margin: 0;
+        padding: 0;
+
+    }
+    .skill_bar{
+        width: 100%;
+    }
+    .info_my-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    
+
+    
+
+    
+    .skill_bar .bar .skill_info span{
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+    }
+    
+    .skill_bar .bar .rectangle {
+        position: relative;
+        width: 95%;
+        height: 4px;
+        background: #C4C4C4;
+    }
+    
+    .bar .rectangle span{
+        width: 80%;
+        height: 100%;
+        background: #34547A;
+        position: absolute;
+    }
+
 }
 /* ==================================================== */
 
@@ -485,13 +572,16 @@
     background: black;
 }
 
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
     .wrapper_work {
         text-align: center;
         padding: 0 25px;
     }
 
     .video_work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 95%;
     }
     .how_work-subtitle {
@@ -561,7 +651,7 @@
     grid-column: span 1;
 
 }
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
     .places_cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -610,9 +700,9 @@
     margin-bottom: 65px;
 }
 
-.web_form {
+/* .web_form {
     width: 540px;
-}
+} */
 
 .web_form input,
 .web_form textarea {
@@ -652,28 +742,42 @@
     letter-spacing: 0.15em;
 }
 
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px){
     .web_cite-info {
-        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        padding: 100px 25px;
+        width: 100%;
+        padding: 0 25px;
     }
     .web_form {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
+
     }
     .web_row{
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+        width: 100%;
     }
-    #name {
-        width: 325px;
+
+    .web_row > .web_group {
+        width: 100%;
+    }
+
+
+
+    .web_group {
+        width: 100%;
     }
     #textarea {
-        width: 330px;
-        height: 175px;
+        width: 100%;
+        height: 300px;
     }
 
 }
@@ -719,7 +823,7 @@
     justify-content: space-around;
 }
 
-@media (max-width: 1279px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
     .footer_wrapper {
         padding-bottom: 50px;
         text-align: center;
